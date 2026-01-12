@@ -30,3 +30,11 @@ let somestring = 34
 let stringconversion = String(somestring)
 console.log(stringconversion)
 console.log(typeof stringconversion)
+
+
+
+
+//*********************operations********
+
+// prefix and post fix operators 
+// +,-,*,/,% are the operations 
