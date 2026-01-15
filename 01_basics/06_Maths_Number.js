@@ -18,7 +18,7 @@ const hundreds = 10000000
 
 
 //**************************Maths*********************** */
-
+// Math is gobal object
 console.log(Math);
 console.log(Math.abs(-4));   // Remove - from negitive value
 console.log(Math.round(4.6));  // Round off
