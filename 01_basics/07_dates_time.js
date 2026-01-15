@@ -32,4 +32,26 @@ let mytimestamp =  Date.now()
 console.log(mytimestamp);   //gives value in mili second majored from the 1970 12:00 AM
 
 console.log(mycreateddate.getTime()); // getTime will now major the time form the date we declared in the a varible . 
- 
+
+console.log(Date.now()/1000);
+ console.log(Math.floor(Date.now()/1000));
+
+let newdate = new Date()
+console.log(newdate);
+console.log(newdate.getMonth());
+console.log(newdate.getMonth() + 1); // user will get the januray from 1 not from 0
+
+//`${newdate.getDate()} and the time is ${mytimestamp}`
+
+console.log(newdate.getFullYear());
+console.log(newdate.getDay());
+console.log(newdate.getHours());
+console.log(newdate.getMonth());
+console.log(newdate.getTimezoneOffset());
+
+
+
+newdate.toLocaleString('default',{
+      weekday: "long",
+      
+})
