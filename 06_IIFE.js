@@ -1,4 +1,4 @@
-// IIFE Imidiately Invoked Funtion (IIFE) --> We use IIFE Bcz sometime the gobal scope polute the function to save funtion
+// IIFE Imidiately Invoked Funtion Expression (IIFE) --> We use IIFE Bcz sometime the gobal scope polute the function to save funtion
 
 
 // This how a normal function work 
@@ -13,4 +13,4 @@
 
 // Similar for syntax for the arrow function
 
-((username) => console.log(`DB Connected to ,${username}`))(`Uday`);
+((username) => console.log(`DB Connected to ,${username}`))(`Uday`); 
