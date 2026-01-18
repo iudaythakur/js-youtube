@@ -39,8 +39,32 @@ if (Object.keys(username).length === 0) {                  // --> Here we conver
 }
  
 
-
+/*********************************************************************************************** */
 
 /**Falsy values --->  "", false, 0, -0, bigint = 0n, null, notdefined, NaN   */
 
 /**Truthy values ---> "0", 'false', "  ", {}, [] , funtiion(){} **/
+
+
+
+// Nullishing coexisting operator  ?? ***********/
+
+let val1;
+
+// val1 =  5 ?? 20 
+val1 =  null ?? 20  // ---> In real world instead of the 20 = we have some complex funtion / this is used for tackling the errors
+// val1 =  undefined ?? 222
+// val1 =  5 ?? 20 
+
+
+console.log(val1);
+
+
+// Ternary Operator --> Syntax = Conditions ? true : false
+
+let balance = 96
+
+balance <= 75 ? console.log("balance is Less than 75") : console.log("Balance is greater then 75 ");
+
+
+
