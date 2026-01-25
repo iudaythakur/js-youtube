@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to Create new element in js</title>
+    <style>
+        #style {
+            background-color: #212121;
+            color: aliceblue;
+        }
+    </style>
+</head>
+
+<body id="style">
+    <div class="parent">
+        <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">Wednesday</div>
+        <div class="day">Thursday</div>
+    </div>
+</body>
+<!-- Traversing = Means that parent to child / child to parent -->
+<script>
+    const parent = document.querySelector('.parent')
+    console.log(parent); // This element in the parent
+    console.log(parent.children); // and this will also give html collection = it is similar to array not exactly similar but some properties match
+    console.log(parent.children[1].innerHTML);
+
+    for (let i = 0; i < parent.children.length; i++) {  // parent.children is liye kiya kyunki ye hame html  collection (And as we know that the html collection is similar to array)
+        console.log(parent.children[i].innerHTML);
+    }
+
+    parent.children[1].style.color = 'orange'
+    console.log(parent.firstElementChild.innerHTML);
+    console.log(parent.lastElementChild.innerHTML);
+    
+    // Here wo go from parent to child
+    const myday = document.querySelector('.day')
+    console.log(myday);
+    console.log(myday.parentElement.innerText);
+    console.log(myday.nextElementSibling.innerText);
+    
+    console.log("Nodes :", parent.childNodes);  // This will give nodelist in this node list have the 9 child it wil conisder every space a node / evey empty line a node / every line with coment a node 
+    
+</script>
+</html>
