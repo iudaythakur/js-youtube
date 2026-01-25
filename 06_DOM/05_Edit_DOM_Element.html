@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style=" background-color: #212121; color: aliceblue;">   
+    <ul class="language">
+        <li>Javascript</li>
+    </ul>
+</body>
+   <script>
+    // This  method will try to traverse the whole tree from top to bottom this case is small but in the some case where the the values are in lakh then this is not the optimized approch
+    function addlanguage(langname){
+     const li = document.createElement('li');
+     li.innerHTML = `${langname}`
+     document.querySelector('.language').appendChild(li)
+    }
+
+    addlanguage("Python")
+    addlanguage("Rust")
+
+    // Now we try optimied approch as we learn in the 04 document
+    
+    function addoptilangname(langname){
+        const li = document.createElement('li');
+        li.appendChild(document.createTextNode(langname)) // This is first step
+        document.querySelector('.language').appendChild(li)
+    }
+    addoptilangname('golang')
+    addoptilangname('C++')
+   </script>
+</html>
