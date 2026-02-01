@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Async</title>
+</head>
+
+<body>
+    <h1>Chair or java script</h1>
+    <button id="stop">stop</button>
+    <button id="start">start</button>
+</body>
+<script>
+    //    setInterval(function (){         // IT is similar like  set timeout but it will continue the code in the given time also consider it like a loop ---> Which runs after the time interval
+    //     console.log("hello Uday", Date.now());
+    //    }, 1000)
+
+    // const saydate = function (str) {
+    //     console.log(str, Date.now());
+    // }
+    // const intervalid = setInterval(saydate, 1000, "Hi")
+    // clearInterval(intervalid)
+    
+    let start = document.getElementById("start")
+    let stop  = document.getElementById("stop")
+    let intervalid;
+    start.addEventListener("click" , () => {
+        intervalid = setInterval(() => {
+        console.log("HI this side uday");
+    }, 2000);
+    })
+    stop.addEventListener("click", () => {
+        clearInterval(intervalid)
+    })
+ </script>
+</html>
